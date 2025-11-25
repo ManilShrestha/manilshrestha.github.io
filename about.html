@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Manil Shrestha - ML Engineer & AI Researcher">
+    <title>About | Manil Shrestha</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">MS</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="publications.html" class="nav-link">Publications</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>About Me</h1>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container">
+                <div class="about-intro">
+                    <p class="lead">
+                        I'm an engineer and scientist who enjoys wrangling messy data, building ML systems, and pushing AI to be both smart <em>and</em> reliable.
+                    </p>
+                    <p>
+                        I've deployed data backbones across organizations and spent years exploring models—from classical ML to LLMs and multimodal architectures. My current research centers on <strong>LLM verification</strong>: using knowledge-graph grounding and graph-based reasoning to turn opaque predictions into transparent reasoning chains that humans can trust.
+                    </p>
+                    <p>
+                        I believe in AI that is intelligent but not confidently incorrect.
+                    </p>
+                </div>
+
+                <div class="about-section">
+                    <h2>Experience</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>9+ Years</h3>
+                                <p class="timeline-title">Data Engineering</p>
+                                <p>Building scalable data infrastructure, ETL pipelines, and distributed systems across multiple organizations.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>5+ Years</h3>
+                                <p class="timeline-title">Machine Learning</p>
+                                <p>From classical ML to deep learning, LLMs, and multimodal architectures. Research and production systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-section">
+                    <h2>Expertise</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>AI/ML Research</h3>
+                            <ul class="skill-list">
+                                <li>Large Language Models (LLMs)</li>
+                                <li>Retrieval Augmented Generation (RAG)</li>
+                                <li>Explainable AI (XAI)</li>
+                                <li>Case-Based Reasoning</li>
+                                <li>Knowledge Graphs</li>
+                                <li>Graph Neural Networks</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Computer Vision</h3>
+                            <ul class="skill-list">
+                                <li>Vision Transformers</li>
+                                <li>Synthetic Image Detection</li>
+                                <li>Multimodal Learning</li>
+                                <li>Image Classification</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>ML Engineering</h3>
+                            <ul class="skill-list">
+                                <li>PyTorch / TensorFlow</li>
+                                <li>Hugging Face Transformers</li>
+                                <li>MLOps & Experiment Tracking</li>
+                                <li>Model Deployment</li>
+                                <li>Distributed Training</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Data Engineering</h3>
+                            <ul class="skill-list">
+                                <li>Apache Spark / Airflow</li>
+                                <li>SQL / NoSQL Databases</li>
+                                <li>AWS / GCP / Azure</li>
+                                <li>Kafka / Streaming</li>
+                                <li>ETL Pipeline Design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-section">
+                    <h2>Current Focus</h2>
+                    <div class="focus-cards">
+                        <div class="focus-card">
+                            <h3>LLM Security & Trustability</h3>
+                            <p>Developing frameworks for automated penetration testing and secure deployment of generative AI systems in sensitive environments.</p>
+                        </div>
+                        <div class="focus-card">
+                            <h3>Knowledge-Grounded AI</h3>
+                            <p>Using knowledge graphs and structured reasoning to make LLM outputs verifiable and reduce hallucinations.</p>
+                        </div>
+                        <div class="focus-card">
+                            <h3>Financial ML (2026)</h3>
+                            <p>Preparing to work with financial trading datasets, exploring trustworthy AI for high-stakes decision making.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Manil Shrestha. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/ManilShrestha" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://linkedin.com/in/manil-shrestha" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://scholar.google.com/citations?user=XSgojYkAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

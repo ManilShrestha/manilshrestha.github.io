@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Manil Shrestha - ML Engineering and AI Research">
+    <title>Projects | Manil Shrestha</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">MS</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="publications.html" class="nav-link">Publications</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Projects</h1>
+                <p class="page-subtitle">Research and engineering work in ML systems, LLM trustability, and explainable AI</p>
+            </div>
+        </section>
+
+        <section class="projects-content">
+            <div class="container">
+                <div class="projects-grid">
+
+                    <article class="project-card featured">
+                        <div class="project-header">
+                            <span class="project-tag">Research</span>
+                            <span class="project-tag">LLM Security</span>
+                        </div>
+                        <h2>Automated LLM Penetration Testing</h2>
+                        <p class="project-tldr">Benchmarking and improving LLM security through automated vulnerability assessment.</p>
+                        <div class="project-details">
+                            <h3>Overview</h3>
+                            <p>Developed a comprehensive benchmark for evaluating LLM security vulnerabilities, including prompt injection, jailbreaking, and data extraction attacks. Created automated testing pipelines that identify weaknesses in production LLM deployments.</p>
+                            <h3>Key Contributions</h3>
+                            <ul>
+                                <li>Novel benchmark suite for LLM security evaluation</li>
+                                <li>Automated attack generation and response analysis</li>
+                                <li>Defense mechanism recommendations based on vulnerability patterns</li>
+                            </ul>
+                            <h3>Tech Stack</h3>
+                            <p class="tech-stack">Python, LLMs, Security Testing Frameworks, Prompt Engineering</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="publications.html" class="project-link">Related Publication →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card featured">
+                        <div class="project-header">
+                            <span class="project-tag">Research</span>
+                            <span class="project-tag">Privacy</span>
+                        </div>
+                        <h2>Secure Multiparty Generative AI</h2>
+                        <p class="project-tldr">Enabling collaborative AI without exposing sensitive training data.</p>
+                        <div class="project-details">
+                            <h3>Overview</h3>
+                            <p>Research on secure computation methods for generative AI, allowing multiple parties to jointly train and query models without revealing their private data. Addresses key challenges in federated learning and secure inference.</p>
+                            <h3>Key Contributions</h3>
+                            <ul>
+                                <li>Privacy-preserving inference protocols for LLMs</li>
+                                <li>Secure aggregation methods for multiparty training</li>
+                                <li>Threat model analysis for collaborative AI systems</li>
+                            </ul>
+                            <h3>Tech Stack</h3>
+                            <p class="tech-stack">Cryptographic Protocols, Federated Learning, PyTorch, Secure Computation</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="publications.html" class="project-link">AAAI 2025 Workshop →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-tag">Research</span>
+                            <span class="project-tag">XAI</span>
+                        </div>
+                        <h2>Knowledge-Based Explainable AI</h2>
+                        <p class="project-tldr">Making AI explanations meaningful through case-based reasoning.</p>
+                        <div class="project-details">
+                            <h3>Overview</h3>
+                            <p>Research on explanation systems that go beyond feature attribution to provide human-understandable rationales. Combines case-based reasoning with modern ML to generate explanations grounded in domain knowledge.</p>
+                            <h3>Key Contributions</h3>
+                            <ul>
+                                <li>Integration of CBR with neural network explanations</li>
+                                <li>Explanation containers for biomedical QA systems</li>
+                                <li>User studies on explanation effectiveness</li>
+                            </ul>
+                            <h3>Tech Stack</h3>
+                            <p class="tech-stack">Case-Based Reasoning, Knowledge Graphs, Python, NLP</p>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-tag">Research</span>
+                            <span class="project-tag">Healthcare</span>
+                        </div>
+                        <h2>Medical Knowledge Extraction with LLMs</h2>
+                        <p class="project-tldr">Structured extraction from clinical text for knowledge graph construction.</p>
+                        <div class="project-details">
+                            <h3>Overview</h3>
+                            <p>Developed LLM-based pipelines for extracting structured medical knowledge from unstructured clinical text. Enables automated construction of medical knowledge graphs for downstream search and summarization tasks.</p>
+                            <h3>Key Contributions</h3>
+                            <ul>
+                                <li>Entity and relation extraction from clinical notes</li>
+                                <li>Knowledge graph construction from extracted triples</li>
+                                <li>Integration with medical search and summarization systems</li>
+                            </ul>
+                            <h3>Tech Stack</h3>
+                            <p class="tech-stack">LLMs, NER, Relation Extraction, Neo4j, UMLS</p>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-tag">Research</span>
+                            <span class="project-tag">Computer Vision</span>
+                        </div>
+                        <h2>Synthetic Image Detection (E3)</h2>
+                        <p class="project-tldr">Detecting AI-generated images with limited training data.</p>
+                        <div class="project-details">
+                            <h3>Overview</h3>
+                            <p>Ensemble approach for detecting synthetic images from new generators using limited training samples. Addresses the challenge of rapidly evolving image generation models and the need for adaptable detection systems.</p>
+                            <h3>Key Contributions</h3>
+                            <ul>
+                                <li>Expert ensemble architecture for few-shot adaptation</li>
+                                <li>Robust detection across multiple generator architectures</li>
+                                <li>Efficient fine-tuning strategies for new generators</li>
+                            </ul>
+                            <h3>Tech Stack</h3>
+                            <p class="tech-stack">PyTorch, Vision Transformers, Few-Shot Learning, Image Forensics</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="publications.html" class="project-link">CVPR 2024 Workshop →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-tag">Engineering</span>
+                            <span class="project-tag">Data</span>
+                        </div>
+                        <h2>Enterprise Data Backbone</h2>
+                        <p class="project-tldr">Scalable data infrastructure powering analytics and ML workflows.</p>
+                        <div class="project-details">
+                            <h3>Overview</h3>
+                            <p>Designed and deployed a multi-organization datastore serving as the backbone for analytics and ML pipelines. Built for 24/7 reliability with automated ETL, real-time transformations, and comprehensive monitoring.</p>
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>Automated ETL pipelines with Airflow orchestration</li>
+                                <li>Real-time streaming transformations with Kafka</li>
+                                <li>Data quality monitoring and alerting</li>
+                                <li>Self-service analytics layer for business users</li>
+                            </ul>
+                            <h3>Tech Stack</h3>
+                            <p class="tech-stack">Apache Airflow, Spark, Kafka, AWS, PostgreSQL, dbt</p>
+                        </div>
+                    </article>
+
+                    <article class="project-card upcoming">
+                        <div class="project-header">
+                            <span class="project-tag">Upcoming</span>
+                            <span class="project-tag">Finance</span>
+                        </div>
+                        <h2>Financial Trading ML Analysis</h2>
+                        <p class="project-tldr">Trustworthy AI for financial decision making.</p>
+                        <div class="project-details">
+                            <h3>Overview</h3>
+                            <p>Starting 2026: Research on applying trustworthy AI principles to financial trading datasets. Focus on interpretable models, uncertainty quantification, and knowledge-grounded predictions for high-stakes environments.</p>
+                            <h3>Planned Focus Areas</h3>
+                            <ul>
+                                <li>Time-series modeling with uncertainty quantification</li>
+                                <li>Knowledge-grounded market signal extraction</li>
+                                <li>Interpretable trading strategy analysis</li>
+                            </ul>
+                            <h3>Tech Stack</h3>
+                            <p class="tech-stack">LLMs, Time-Series Models, Knowledge Graphs, Risk Analysis</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Manil Shrestha. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/ManilShrestha" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://linkedin.com/in/manil-shrestha" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://scholar.google.com/citations?user=XSgojYkAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
